@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 20px;
+    background-color: lightpink;
+    font-family: sans-serif;
+}
+
+header,
+footer {
+    background-color: blueviolet;
+    height: 69px;
+}
+
+main{
+    padding: 40px;
+    min-height: 100vh;
+    width: 60vw;
+    margin:0 auto;
+}
+
+nav {
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 35px;
+}
+
+nav>ul>li {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.active {
+    background: yellow;
+}
+
+nav>ul>li>a {
+    color: red;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 250%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 0, 0);
+}
+
+h2 {
+    font-size: 180%;
+}
+
+section{
+    width: 100%;
+    padding: 40px;
+}
+
+article {
+    width: 100%;
+    background-color: rgb(6, 112, 2);
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.doos{
+width: 100%;
+height: 400px;
+position: relative;
+padding: 0;
+background-color: blueviolet;
+margin-bottom: 69px;
+}
+
+.doos > a > figure{
+    width: 100%;
+    height: 100%;
+}
+
+.doos > a > figure > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:69px;
+}
+
+.doos > a > figure > img:hover{
+    transform: none;
+}
+
+.doos > a > section{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    padding: 50px;
+    color: aqua;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent,80%,blueviolet);
+    border-radius: 69px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+
+.top {
+    width: 80px;
+    height: 80px;
+    background: fuchsia;
+    border: none;
+    font-size: 150%;
+    font-family: sans-serif;
+    border-radius: 900px;
+    color: aqua;
+    position: fixed;
+    top: 150px;
+    right: 69px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure {
+    margin-bottom: 40px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(5);
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+p:hover {
+    color: rgb(26, 111, 0);
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+figcaption {
+    font-size: 80%;
+    font-style: italic;
+}
+
+audio {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+video {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+footer>p {
+    width: 60%;
+    margin: 0 auto;
+    padding-left: 80px;
+    color: yellowgreen;
+}
+
+@media screen and (max-width:1000px) {
+    header>p {
+        width: 80%;
+    }
+
+    header {
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+
+    }
+
+    nav>ul {
+        display: block;
+    }
+
+    main {
+        width: 80vw;
+    }
+
+    img:hover {
+        transform: none;
+    }
+
+    footer>p {
+        width: 80vw;
+    }
+
+    .top {
+        width: 80px;
+        height: 80px;
+        top: 75px;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+        font-size: 16px;
+    }
+
+
+    main {
+        width: 100vw;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 180;
+    }
+
+    footer>p {
+        width: 100vw;
+        padding-left: 60px;
+    }
+
+    .top {
+        width: 80px;
+        height: 80px;
+        top: 75px;
+        right: 30px;
+    }
+
+}

@@ -1,0 +1,4 @@
+- een string naar de console schrijven: public static class Console
+- een random getal laten maken: public class Random
+- input lezen vanaf de console: ICommand
+- bedenk zelf nog 1 ding wat je graag zou willen weten of kan gebruiken
